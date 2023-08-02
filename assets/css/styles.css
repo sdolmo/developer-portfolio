@@ -36,11 +36,11 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: black;
 }
 
 a:hover {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 body {
@@ -68,17 +68,17 @@ nav {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-nav h1 {
+/* nav h1 {
   color: var(--primary-color);
-}
+} */
 
 nav a {
-  color: var(--primary-color);
   transition: var(--transition);
+  color: black;
 }
 nav a:hover {
-  color: var(--secondary-color);
-  border-bottom: 2px solid var(--secondary-color);
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
 }
 
 nav ul {
@@ -91,7 +91,6 @@ nav ul li {
 }
 
 .burger-menu {
-  color: var(--primary-color);
   font-size: 2rem;
   border: 0;
   background-color: transparent;
@@ -101,19 +100,23 @@ nav ul li {
 /* Navbar ends */
 
 /* Hero section */
-.hero {
+/* .hero {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
   max-width: 68.75rem;
+  height: 15rem;
   margin: auto;
+  margin-bottom: 10rem;
 }
 
 .hero img {
-  height: 37.5rem;
-  width: 37.5rem;
-}
+  height: 16rem;
+  width: 16rem;
+  border-radius: 50%;
+  margin-top: 14rem;
+} */
 
 .bio {
   width: 25rem;
@@ -333,6 +336,34 @@ footer {
   margin: 10px;
 }
 
+.book-container {
+  background-color: var(--bg-color);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.book-container h4 {
+  margin-top: .5rem;
+}
+
+.book-pic {
+  width: 10rem;
+
+}
+
+.book-title {
+  text-align: center;
+}
+
 /* Media queries for responsiveness */
 @media screen and (max-width: 720px) {
   nav {
@@ -369,8 +400,8 @@ footer {
   }
 
   .hero img {
-    height: 37.5rem;
-    width: 30rem;
+    height: 15.5rem;
+    width: 15rem;
   }
 
   .bio {
@@ -404,6 +435,11 @@ footer {
     width: 20.875rem;
   }
 
+  .book-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
   .contact-form-container {
     max-width: 23.75rem;
   }
@@ -411,8 +447,8 @@ footer {
 
 @media screen and (max-width: 420px) {
   .hero img {
-    height: 37.5rem;
-    width: 23rem;
+    height: 10.5rem;
+    width: 10rem;
   }
 
   .bio {

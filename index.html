@@ -8,35 +8,23 @@
     <!--CSS Styles -->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/icons/favicon-32x32.png"
-    />
-
     <!-- Animate CSS CDN -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <title>Jane Doe | Web Developer</title>
+    <title>Sylvia Dolmo | Software Engineer</title>
   </head>
 
   <body>
     <!-- Navbar -->
     <nav>
-      <h1>JANE DOE</h1>
+      <h1>Sylvia Dolmo</h1>
       <ul class="navigation">
-        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#more-about" class="nav-link">About</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#books" class="nav-link">Books</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
       <button class="burger-menu" id="burger-menu">
@@ -44,44 +32,27 @@
         <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
       </button>
     </nav>
-    
-    <p> 0024 </p>
 
     <!-- Hero Section -->
-    <section class="hero" id="about">
+    <!-- <section class="hero" id="about">
       <img
         src="assets/images/wfh_1.svg"
-        alt="jane-doe"
+        alt="sylvia"
         loading="lazy"
         class="hero-img"
       />
-      <div class="bio animate__animated animate__shakeX">
-        <h2 class="bio-title">About Me</h2>
-        <p class="bio-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
-          dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
-          inventore tempore minus nemo, iste ullam illo laboriosam maiores
-          repudiandae quos!
-        </p>
-      </div>
-    </section>
+    </section> -->
 
     <!-- More about -->
-    <section class="more-about">
-      <h2>More About Me</h2>
+    <section class="more-about" id="more-about">
+      <h2>About Me</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-        nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
-        autem deleniti cupiditate molestias quis unde quae totam porro dicta
-        iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
-        nostrum dolor minus, libero delectus praesentium perferendis
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-        consequuntur labore? Ea totam voluptas amet!
+        I am a full-stack engineer with experience building high-quality
+        software that delivers enjoyable user experiences. Throughout my career,
+        I have gained exposure to various aspects of the software delivery
+        lifecycle, which has enabled me to understand how the software operates
+        as a system. In addition, I have experience with multiple technologies,
+        such as JavaScript, React, and Node.js.
       </p>
     </section>
 
@@ -113,12 +84,6 @@
 
         <div class="second-set animate__animated animate__pulse">
           <img
-            src="assets/icons/icons8-bootstrap.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
             src="assets/icons/icons8-react-native.svg"
             alt=""
             loading="lazy"
@@ -136,59 +101,104 @@
 
     <!-- Projects section -->
     <section class="projects" id="projects">
-      <h2 class="projects-title">Some of my Recent Projects</h2>
+      <h2 class="projects-title">Recent Projects</h2>
       <div class="projects-container">
         <div class="project-container project-card">
           <img
-            src="assets/images/expenseTracker.png"
+            src="assets/images/personal-finance-app.png"
             alt="expense-tracker"
             loading="lazy"
             class="project-pic"
           />
-          <h3 class="project-title">Expense Tracker</h3>
+          <h3 class="project-title">Personal Finance App</h3>
           <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
+            The Personal Finance Application allows users to view their account
+            balances and monitor transactions
           </p>
           <a href="#" target="_blank" class="project-link">Check it Out</a>
+          <br />
+          <a
+            href="https://github.com/sdolmo/personal-finance-app-web-js"
+            target="_blank"
+            class="project-link"
+            >Github Repo</a
+          >
         </div>
         <div class="project-container project-card">
           <img
-            src="assets/images/netflixClone.png"
+            src="assets/images/pexel-proj.png"
             alt="netflic-clone"
             loading="lazy"
             class="project-pic"
           />
-          <h3 class="project-title">Netflix Clone</h3>
+          <h3 class="project-title">Photo Book</h3>
           <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
+            This is a photo gallery built with Create React App and the Pexel
+            API
           </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
+          <a
+            href="https://photo-book-07311106.netlify.app/"
+            target="_blank"
+            class="project-link"
+            >Check it Out</a
+          >
+          <br />
+          <a
+            href="https://github.com/sdolmo/photo-book"
+            target="_blank"
+            class="project-link"
+            >Github Repo</a
+          >
         </div>
-        <div class="project-container project-card">
+      </div>
+    </section>
+
+    <!-- Reading List section -->
+    <section class="books" id="books">
+      <h2 class="projects-title">Bookshelf</h2>
+      <div class="book-container">
+        <div class="book-card">
           <img
-            src="assets/images/greenyEarth.png"
-            alt="greeny-earth"
+            src="https://www.booktopia.com.au/covers/600/9781942788768/5330/the-unicorn-project.jpg"
+            alt="expense-tracker"
             loading="lazy"
-            class="project-pic"
+            class="book-pic"
           />
-          <h3 class="project-title">Greeny Earth</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
+          <h4 class="book-title">The Unicorn Project</h4>
+        </div>
+        <div class="book-card">
+          <img
+            src="https://miro.medium.com/v2/resize:fit:1146/1*vERb1iY6cYCr_WT3Rh5ijg.png"
+            alt="expense-tracker"
+            loading="lazy"
+            class="book-pic"
+          />
+          <h4 class="book-title">Accelerate</h4>
+        </div>
+        <div class="book-card">
+          <img
+            src="https://m.media-amazon.com/images/I/81ZMvLDtmIL._AC_UF1000,1000_QL80_.jpg"
+            alt="expense-tracker"
+            loading="lazy"
+            class="book-pic"
+          />
+          <h4 class="book-title">The Pheonix Project</h4>
+        </div>
+        <div class="book-card">
+          <img
+            src="https://pictures.abebooks.com/inventory/md/md31070343546.jpg"
+            alt="expense-tracker"
+            loading="lazy"
+            class="book-pic"
+          />
+          <h4 class="book-title">Modern Software Engineering</h4>
         </div>
       </div>
     </section>
 
     <!-- Contact section -->
     <section class="contact" id="contact">
-      <h2>Get In Touch With Me</h2>
+      <h2>Contact Me</h2>
       <div class="contact-form-container">
         <div class="contact-form">
           <form action="https://formspree.io/f/xyylnggw" method="POST">
@@ -239,47 +249,21 @@
 
     <!-- Social accounts - Fixed to the right -->
     <div class="socials">
-      <a href="#" target="_blank"
-        ><img
-          src="assets/icons/icons8-twitter-circled.gif"
-          alt="Twitter"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="#" target="_blank"
-        ><img
-          src="assets/icons/icons8-instagram.gif"
-          alt="Instagram"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="#" target="_blank"
-        ><img
-          src="assets/icons/icons8-linkedin-circled.gif"
-          alt="Linkedin"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="#" target="_blank"
-        ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
-      /></a>
+      <a href="https://www.linkedin.com/in/sylviadolmo/" target="_blank">
+        <ion-icon name="logo-linkedin" class="socicon">
+      </a>
+      <a href="https://github.com/sdolmo" target="_blank">
+        <ion-icon name="logo-github" class="socicon"></ion-icon>
+      </a>
     </div>
-
-    <!-- Scroll to top -->
-    <i class="scroll-up" id="scroll-up"
-      ><img
-        src="assets/icons/icons8-upward-arrow.gif"
-        class="socicon up-arrow"
-        alt=""
-    /></i>
 
     <!-- Footer section -->
     <footer>
-      <p class="copy">&copy; Copyright 2021</p>
+      <p class="copy">&copy; Copyright 2023</p>
       <p class="copy">
-        Built with &#x2661; by
-        <a href="https://twitter.com/koladechris" target="_blank"
-          >Kolade Chris (Ksound)</a
+        Built by
+        <a href="https://www.linkedin.com/in/sylviadolmo/" target="_blank"
+          >Sylvia Dolmo</a
         >
       </p>
     </footer>
